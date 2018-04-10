@@ -32,7 +32,7 @@ module IdeaboardApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://ideaboardreact.herokuapp.com/'
+        origins 'https://ideaboardreact.herokuapp.com'
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
       end
     end
